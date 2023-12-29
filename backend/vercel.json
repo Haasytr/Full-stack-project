@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/server.js",
+      "src": "dist/",
       "use": "@now/node"
     }
   ],
   "routes": [
     {
-      "src": "src/(.*)",
-      "dest": "http/controllers/users/routes.ts"
+      "src": "dist/(.*)",
+      "dest": "dist/http/controllers/users/routes.ts"
     }
   ]
 }
