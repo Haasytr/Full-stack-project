@@ -1,6 +1,6 @@
 {
   "builds": [
-    { "src": "src", "use": "@vercel/static-build" }
+    { "src": ".", "use": "@vercel/static-build" }
   ],
   "outputDirectory": "dist"
 }
