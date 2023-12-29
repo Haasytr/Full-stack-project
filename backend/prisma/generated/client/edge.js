@@ -113,7 +113,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/home/vinicius/Desktop/programação/FINAL/Technical-Test/backend/prisma/generated/client",
+      "value": "/home/vinicius/Desktop/programação/ASGFHASDJGSDGJ/backend/prisma/generated/client",
       "fromEnvVar": null
     },
     "config": {
@@ -130,7 +130,8 @@ const config = {
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": null
+    "rootEnvPath": "../../../.env",
+    "schemaEnvPath": "../../../.env"
   },
   "relativePath": "../..",
   "clientVersion": "5.7.1",

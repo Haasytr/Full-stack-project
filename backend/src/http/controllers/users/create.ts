@@ -1,9 +1,9 @@
 import { type FastifyRequest, type FastifyReply } from 'fastify'
 import { z } from 'zod'
+import { Part } from '../../../@types/fastify-requests'
+import { transformCSVToJSON } from '../../../utils/transform-csv-to-json'
+import { makeCreateUserUseCase } from '../../../use-cases/factories/make-create-user-use-case'
 
-import { makeCreateUserUseCase } from '@/use-cases/factories/make-create-user-use-case'
-import { transformCSVToJSON } from '@/utils/transform-csv-to-json'
-import { Part } from '@/@types/fastify-requests'
 
 async function FormatAndValidateCSV(csv: AsyncIterable<Part>) {
   const createUserSchema = z.object({

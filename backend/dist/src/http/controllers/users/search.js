@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.search = void 0;
 const zod_1 = require("zod");
-const make_get_user_use_case_1 = require("@/use-cases/factories/make-get-user-use-case");
+const make_get_user_use_case_1 = require("../../../use-cases/factories/make-get-user-use-case");
 async function search(req, reply) {
     try {
         const getUserSchema = zod_1.z.object({

@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.create = void 0;
 const zod_1 = require("zod");
-const make_create_user_use_case_1 = require("@/use-cases/factories/make-create-user-use-case");
-const transform_csv_to_json_1 = require("@/utils/transform-csv-to-json");
+const transform_csv_to_json_1 = require("../../../utils/transform-csv-to-json");
+const make_create_user_use_case_1 = require("../../../use-cases/factories/make-create-user-use-case");
 async function FormatAndValidateCSV(csv) {
     const createUserSchema = zod_1.z.object({
         name: zod_1.z.string(),

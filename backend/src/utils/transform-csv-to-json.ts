@@ -1,5 +1,5 @@
-import { Part } from '@/@types/fastify-requests'
 import csvToJson from 'csvtojson'
+import { Part } from '../@types/fastify-requests'
 
 export async function transformCSVToJSON(csvData: AsyncIterable<Part>) {
   try {

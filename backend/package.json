@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx prisma migrate dev && tsx watch src/server.ts",
+    "dev": "tsx watch src/server.ts",
     "test": "vitest run --dir src/use-cases",
     "test:watch": "vitest --dir src/use-cases",
-    "build": "npx prisma migrate deploy && tsc"
+    "build": "tsc && npx prisma migrate deploy"
   },
   "keywords": [],
   "author": "",

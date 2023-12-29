@@ -1,7 +1,7 @@
 import { type FastifyRequest, type FastifyReply } from 'fastify'
 import { z } from 'zod'
+import { makeGetUserUseCase } from '../../../use-cases/factories/make-get-user-use-case'
 
-import { makeGetUserUseCase } from '@/use-cases/factories/make-get-user-use-case'
 
 export async function search(req: FastifyRequest, reply: FastifyReply) {
   try {
