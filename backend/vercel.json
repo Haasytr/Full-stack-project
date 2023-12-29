@@ -1,15 +1,6 @@
 {
-  "version": 2,
   "builds": [
-    {
-      "src": "dist/",
-      "use": "@now/node"
-    }
+    { "src": "src", "use": "@vercel/static-build" }
   ],
-  "routes": [
-    {
-      "src": "dist/(.*)",
-      "dest": "dist/http/controllers/users/routes.ts"
-    }
-  ]
+  "outputDirectory": "dist"
 }
